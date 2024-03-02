@@ -1,0 +1,138 @@
+*{
+    box-sizing: border-box;
+    overflow: hidden;
+    margin:0;
+    padding:0;
+    background-color: #f3f5fc;
+    font-family: "inter";
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 150%;
+}
+
+.navbar .lateral .textoAside .mensajeNoEncontrado{
+    text-decoration:dashed;
+    text-decoration-color: aqua;
+}
+
+#mensajeNo{
+    text-decoration:dashed;
+    text-decoration-color: aqua;
+}
+
+.logo{ 
+    display:block;
+    padding-top: 4%;
+    width: 17%;
+}
+
+.advertencia{ 
+    display:block;
+    margin-left: 10%;
+    margin-top: 10%;
+}
+
+#textoEncriptado{
+  width: 70%;
+  height: 70%;
+  display: block;
+  margin: auto;
+  margin-top: 20px;  
+  border: none;
+  color: #0a3871;
+  outline: none;
+  text-transform: lowercase;
+  }
+
+#textoDesencriptado{
+  width: 70%;
+  height: 70%;
+  display: block;
+  margin: auto;
+  margin-top: 30%;  
+  border: none;
+  color: #0a3871;
+  outline: none;
+  text-transform: lowercase;
+  }
+
+
+.botones{
+    text-align: left;
+    margin-left: 10%;
+    margin-top: 1%;
+}
+
+
+#botonEncriptado, #botonDesencriptado, #botonCopiar{
+    width: 34%;;
+    height: 14%;
+    border-radius: 22px;
+    cursor: pointer;
+    font-size: 20px;  
+}
+
+
+#botonEncriptado{
+    background-color: #0a3871;
+    color: #ffff;
+    border-color: 1px solid #0a3871;
+}
+
+
+.areacopiado{
+    padding-top: 16%;
+}
+
+
+body{
+    min-height: 100vh;
+}
+
+
+.lateral{
+    width: 100%;
+    height: 100%;
+}
+
+
+.investigador{
+    padding-top: 20%;
+}
+
+
+.grid-container > * {
+   text-align: center;
+   font-weight: 500;
+}
+
+.grid-container{
+    display: grid;
+    grid-template: 
+    "header"
+    "navbar";
+
+.ocultar{
+    display:none;
+    }    
+
+.header {
+        grid-area: header;
+    }
+
+.navbar {
+        grid-area: navbar;
+        border-radius: 5%;
+    }
+ 
+
+    @media (min-width: 768px) {
+        grid-template: 
+        "header header navbar" auto;   
+    }
+
+    @media (min-width: 992px) {
+        grid-template: 
+        "header header header navbar" auto;   
+    }
+}

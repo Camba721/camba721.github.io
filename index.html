@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="esp">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>ENCRIPTADOR - CHALLENGE ALURA</title>
+        <link rel="https://fonts.google.com/share?selection.family=Inter:wght@100;200;300;400;500;600;700;800;900" rel="stylesheet">
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="./styles.css">
+    </head>
+
+
+    <body class="grid-container">
+
+        <header class="header">
+            <section class="Section1">
+                <img src="Imagenes/Logo.png" alt="logoalura" class="logo">
+            </section>
+            
+            <section class="Section2">
+                <textarea placeholder="Ingrese el texto aqui" id="textoEncriptado" name="entrada" col="20" rows="6"></textarea>
+            </section>
+            
+            <section class="Section3">
+                <img src="Imagenes/Frame 1.png" alt="Mensaje" class="advertencia"> 
+                <div class="botones">  
+                <button type="button" id="botonEncriptado" onclick ="encriptar()">Encriptar</button>
+                <button type="button" id="botonDesencriptado" onclick ="desencriptar()">Desencriptar</button>
+                </div>
+            </section>
+        </header>
+
+
+        <nav class="navbar">
+            <div class="lateral">
+                <img src="Imagenes/Muñeco.png"  alt="investigador" class="investigador">
+                <div class="textoAside">
+                        <p class="mensajeNoEncontrado">Ningun mensaje fue</p>
+                        <p id="mensajeNo">encontrado</p>
+                        <p>Ingresa el texto que deseas encriptar</p>
+                        <p>desencriptar</p>
+                </div>
+            </div>
+            <div class="oculto">
+                <div class="areaDesencriptado">
+                    <textarea id="textoDesencriptado" class="salida" name="resultado" col="20" rows="6"></textarea>
+                </div>
+                <div class="areacopiado">
+                    <button type="button" id="botonCopiar" onclick ="copiar()">Copiar</button>
+                </div>
+
+            </div>
+
+        </nav>
+
+    </body>
+    <script src="app.js"></script> 
+</html>
